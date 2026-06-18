@@ -23,6 +23,16 @@ The resulting release APK is only **19.21 KB (19,215 bytes)**!
 
 ---
 
+## Privacy, Safety & Minimal Footprint
+TimerTorch is engineered on a strict "least privilege" philosophy, guaranteeing complete transparency and respect for your device:
+- **100% Safe & Auditable**: Zero third-party SDKs, analytics, trackers, or hidden background services. The entire application logic resides in a single, easily readable `MainActivity.java` file.
+- **No Internet Connection Required**: The app never requests the `INTERNET` permission and operates entirely offline. Your data never leaves your device.
+- **Ultra-Low Storage & RAM Usage**: The fully optimized release APK weighs in at just **~19 KB**. It runs efficiently with negligible memory overhead, making it ideal for older or storage-constrained devices.
+- **Zero Unwanted Permissions**: Adheres strictly to the principle of least privilege. Only declares optional hardware features (`android.hardware.camera.flash`) in the manifest. No location, storage, contacts, microphone, or identity access is ever requested.
+- **Clean Lifecycle Management**: Follows Android best practices. The optional auto-exit feature ensures no background tasks or services linger after the timer completes.
+
+---
+
 ## Project Structure
 ```text
 timertorch/

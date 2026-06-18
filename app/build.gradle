@@ -1,0 +1,29 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.developeranaz.timertorch'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.developeranaz.timertorch"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // ZERO dependencies to minimize APK size.
+    // The native platform SDK classes are accessed directly.
+}

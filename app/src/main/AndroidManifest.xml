@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Note: CameraManager.setTorchMode does not require CAMERA permission on API 21+. -->
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="Timer Torch"
+        android:theme="@android:style/Theme.DeviceDefault.Light">
+        
+        <activity
+            android:name="com.developeranaz.timertorch.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
